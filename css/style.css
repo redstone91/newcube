@@ -1,0 +1,234 @@
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0 10px;
+    border-bottom: solid 1px #90f9;
+}
+
+nav a {
+    color: #000000;
+    border-radius: 10px;
+    padding: 0 10px;
+    margin: 10px 10px;
+}
+
+.cube {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: calc(50% - 100px / 2);
+    left: calc(50% - 200px / 2);
+    transform-style: preserve-3d;
+    transform: perspective(500px) rotateX(-36deg) rotateY(-27deg);
+    transition: all 1s ease;
+}
+
+.cube>article {
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    position: absolute;
+    transform-style: preserve-3d;
+    background: linear-gradient(0deg, #070b0f, #111b29);
+    color: #fff;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+    box-shadow: 0 0 1px #f00, 0 0 1px #f00, 0 0 1px #f00, 0 0 1px #f00, 0 0 10px #d0e9 inset, 0 0 35px #53d5;
+}
+
+.back {
+    transform: rotateX(-180deg) translateZ(100px);
+}
+
+.top {
+    transform: rotateX(90deg) translateZ(100px);
+}
+
+.front {
+    transform: translateZ(100px);
+}
+
+.bottom {
+    transform: rotateX(-90deg) translateZ(100px);
+}
+
+.left {
+    transform: rotateY(-90deg) translateZ(100px);
+}
+
+.right {
+    transform: rotateY(90deg) translateZ(100px);
+}
+
+.cube>article h2 {
+    text-transform: uppercase;
+    color: #900;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.cube>article p {
+    font-weight: 200px;
+    font-size: 15px;
+}
+
+.cube>article img {
+    width: 100%;
+}
+
+body {
+    background-color: #ccc;
+}
+
+p {
+    font-family: Arial;
+    font-size: 12px;
+    text-align: justify;
+    text-indent: 20px;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+    font-family: Arial;
+}
+
+#pagewrap {
+    width: 980px;
+    margin: 0 auto;
+}
+
+#header {
+    height: 140px;
+    padding: 10px;
+    background: url(https://1.bp.blogspot.com/-QTAVUGhgoHk/UVIkJus9fkI/AAAAAAAAFHY/XkPV38UA9VM/s1600/light-gray-fabric-weave.jpg);
+}
+
+ul li {
+    display: inline;
+}
+
+#content {
+    width: 680px;
+    float: left;
+    padding: 10px;
+    background-color: #fff;
+}
+
+#sidebar {
+    width: 260px;
+    float: right;
+    background-color: #999;
+}
+
+#footer {
+    height: 30px;
+    clear: both;
+    background: url(https://1.bp.blogspot.com/-QTAVUGhgoHk/UVIkJus9fkI/AAAAAAAAFHY/XkPV38UA9VM/s1600/light-gray-fabric-weave.jpg);
+}
+
+@media screen and (max-width: 980px) {
+    #pagewrap {
+        width: 95%;
+    }
+
+    #content {
+        width: 60%;
+        padding: 3% 4%;
+    }
+
+    #sidebar {
+        width: 30%;
+    }
+
+    #sidebar .widget {
+        padding: 8% 7%;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #header {
+        height: auto;
+    }
+
+    #searchform {
+        position: absolute;
+        top: 5px;
+        right: 0;
+    }
+
+    #main-nav {
+        position: static;
+    }
+
+    #site-logo {
+        margin: 15px 100px 5px 0;
+        position: static;
+    }
+
+    #site-description {
+        margin: 0 0 15px;
+        position: static;
+    }
+
+    #content {
+        width: auto;
+        float: none;
+        margin: 20px 0;
+    }
+
+    #sidebar {
+        width: 100%;
+        float: none;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    html {
+        -webkit-text-size-adjust: none;
+    }
+
+    #main-nav a {
+        font-size: 90%;
+        padding: 10px 8px;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+    /* ie8 */
+}
+
+.video embed,
+.video object,
+.video iframe {
+    width: 100%;
+    height: auto;
+}
+
+.result {
+    margin: 100px;
+}
+
+article>img {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
